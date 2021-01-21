@@ -1,4 +1,4 @@
-package com.aws.demo.springboot.security;
+package com.aws.demo.springboot.config.auth;
 
 import com.aws.demo.springboot.domain.user.Role;
 import lombok.RequiredArgsConstructor;

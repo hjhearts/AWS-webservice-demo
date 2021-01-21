@@ -1,5 +1,7 @@
-package com.aws.demo.springboot.domain.posts;
+package com.aws.demo.springboot.posts;
 
+import com.aws.demo.springboot.domain.posts.Posts;
+import com.aws.demo.springboot.domain.posts.PostsRepository;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,7 +18,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest
 public class PostsRepositoryTest {
     @Autowired
-    PostsRepository postsRepository;
+    private PostsRepository postsRepository;
 
     @After
     public void cleanUp(){
@@ -31,10 +33,10 @@ public class PostsRepositoryTest {
 
         postsRepository.save(
                 Posts.builder()
-                .title(title)
-                .content(content)
-                .author("hjs@gmail.com")
-                .build()
+                        .title(title)
+                        .content(content)
+                        .author("hjs@gmail.com")
+                        .build()
         );
 
         List<Posts> postsList = postsRepository.findAll();

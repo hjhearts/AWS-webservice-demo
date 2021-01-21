@@ -12,12 +12,13 @@ import static org.assertj.core.api.Assertions.assertThat;
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class IndexControllerTest {
+
     @Autowired
     private TestRestTemplate restTemplate;
 
     @Test
-    public void main_page_load_test(){
+    public void return_h1_body(){
         String body = restTemplate.getForObject("/", String.class);
-        assertThat(body).contains("Web Service Start by Spring Boot");
+        assertThat(body).contains("Spring Boot");
     }
 }

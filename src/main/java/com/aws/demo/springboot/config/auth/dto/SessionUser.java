@@ -1,4 +1,4 @@
-package com.aws.demo.springboot.security.dto;
+package com.aws.demo.springboot.config.auth.dto;
 
 import com.aws.demo.springboot.domain.user.User;
 import lombok.Getter;

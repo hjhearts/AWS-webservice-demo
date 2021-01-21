@@ -1,6 +1,6 @@
 package com.aws.demo.springboot.web;
 
-import com.aws.demo.springboot.security.dto.SessionUser;
+import com.aws.demo.springboot.config.auth.dto.SessionUser;
 import com.aws.demo.springboot.service.posts.PostsService;
 import com.aws.demo.springboot.web.dto.PostsResponseDto;
 import lombok.RequiredArgsConstructor;

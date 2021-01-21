@@ -1,9 +1,9 @@
-package com.aws.demo.springboot.security;
+package com.aws.demo.springboot.config.auth;
 
 import com.aws.demo.springboot.domain.user.User;
 import com.aws.demo.springboot.domain.user.UserRepository;
-import com.aws.demo.springboot.security.dto.OAuthAttributes;
-import com.aws.demo.springboot.security.dto.SessionUser;
+import com.aws.demo.springboot.config.auth.dto.OAuthAttributes;
+import com.aws.demo.springboot.config.auth.dto.SessionUser;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
